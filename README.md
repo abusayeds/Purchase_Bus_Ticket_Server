@@ -25,7 +25,7 @@ A backend system for managing bus tickets, including user authentication, role-b
 ## ER Diagram
 
 The ER diagram illustrates the relationships between `Users`, `Buses`, and `Tickets`.  
-Find the ER diagram [here](https://drive.google.com/file/d/1aXrzDu3_pXIP9BMQl47XYBdBd8PaA7Oj/view?usp=sharing).
+Find the ER diagram [here](https://drive.google.com/file/d/1aXrzDu3_pXIP9BMQl47XYBdBd8PaA7Oj/view?usp=sharing). and use to just import in postman .
 
 
 ---
