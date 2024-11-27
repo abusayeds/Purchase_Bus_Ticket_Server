@@ -15,10 +15,10 @@ const busSchema = new Schema<TBus>(
       type: String,
       required: true,
     },
-    isDeleted: {
-      type: Boolean,
+    status: {
+      type: String,
       required: true,
-      default: false,
+      default: "available",
     },
   },
   {

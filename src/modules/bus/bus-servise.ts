@@ -14,8 +14,7 @@ const getSingleBusDB = async (id: any) => {
 };
 
 const getAllBusDB = async () => {
-  const result = await BusModel.find();
-
+  const result = await BusModel.find({ status: "available" });
   return result;
 };
 const updateBusDB = async (id: string, payload: TBus) => {

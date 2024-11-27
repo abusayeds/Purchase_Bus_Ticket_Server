@@ -16,6 +16,7 @@ router.post(
   requestValidation(authValidation.createAuthValidationSchema),
   authController.createAuth
 );
+router.post("/auth/logout", authController.logoutAuth);
 router.get("/single-user/:id", userController.getSingleUser);
 router.put(
   "/update-user/:id",

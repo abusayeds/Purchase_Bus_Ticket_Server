@@ -5,7 +5,7 @@ const createBusValidationSchema = z.object({
     name: z.string(),
     details: z.string(),
     color: z.string(),
-    isDeleted: z.boolean().default(false),
+    status: z.string().default("available"),
   }),
 });
 const updateBusValidationSchema = z.object({
@@ -13,7 +13,7 @@ const updateBusValidationSchema = z.object({
     name: z.string().optional(),
     details: z.string().optional(),
     color: z.string().optional(),
-    isDeleted: z.boolean().default(false).optional(),
+    status: z.string().default("available").optional(),
   }),
 });
 export const busValidation = {

@@ -17,6 +17,7 @@ router.post(
 router.put(
   "/admin/ticket/:id",
   auth(USER_ROLE.admin),
+  requestValidation(TicketValidation.updateTicketValidation),
   ticketsController.updateTicket
 );
 router.delete(
@@ -37,9 +38,5 @@ router.get(
   auth(USER_ROLE.user),
   ticketsController.getAvailableTicket
 );
-router.post(
-  "/tickets/purchas",
-  auth(USER_ROLE.user),
-  ticketsController.purchaseTicket
-);
-export const slotsRouts = router;
+
+export const ticketRouts = router;

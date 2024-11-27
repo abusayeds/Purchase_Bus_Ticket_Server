@@ -19,7 +19,11 @@ router.put(
   requestValidation(busValidation.updateBusValidationSchema),
   busController.updateBus
 );
-router.get("/buses", auth(USER_ROLE.user), busController.getAllBus);
+router.get(
+  "/buses",
+  auth(USER_ROLE.user, USER_ROLE.admin),
+  busController.getAllBus
+);
 router.get("/bus/:id", busController.getsSingleBus);
 
 router.delete("/admin/bus/:id", auth(USER_ROLE.admin), busController.deleteBus);

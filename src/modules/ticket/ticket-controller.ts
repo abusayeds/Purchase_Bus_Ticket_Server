@@ -42,21 +42,10 @@ const updateTicket = catchAsync(async (req, res) => {
     data: result,
   });
 });
-const purchaseTicket = catchAsync(async (req, res) => {
-  const { id } = req.params;
-  const result = await ticketServise.purchaseTicketDB(id, req.body);
-  sendResponse(res, {
-    statusCode: httpStatus.OK,
-    success: true,
-    message: " Ticket purchase successfully",
-    data: result,
-  });
-});
 
 export const ticketsController = {
   createTicket,
   getAvailableTicket,
   deleteTicket,
   updateTicket,
-  purchaseTicket,
 };
