@@ -25,14 +25,14 @@ A backend system for managing bus tickets, including user authentication, role-b
 ## ER Diagram
 
 The ER diagram illustrates the relationships between `Users`, `Buses`, and `Tickets`.  
-Find the ER diagram [here](https://drive.google.com/file/d/1aXrzDu3_pXIP9BMQl47XYBdBd8PaA7Oj/view?usp=sharing). and use to just import in postman .
+Find the ER diagram [here](https://drive.google.com/file/d/1aXrzDu3_pXIP9BMQl47XYBdBd8PaA7Oj/view?usp=sharing). 
 
 
 ---
 
 ## API Documentation
 
-Comprehensive API documentation, including request/response structures and sample payloads, is available in the [Postman collection](https://api.postman.com/collections/35012738-f14f8cb5-7d24-4434-9587-52f48be337f6?access_key=PMAT-01JDQ19TK19N5AX3B9BZGXXM4P).
+Comprehensive API documentation, including request/response structures and sample payloads, is available in the [Postman collection](https://api.postman.com/collections/35012738-f14f8cb5-7d24-4434-9587-52f48be337f6?access_key=PMAT-01JDQ19TK19N5AX3B9BZGXXM4P). and use to just import in postman .
 
 ### Authentication APIs
 - **POST** https://ticketmanagementsystem-liart.vercel.app/auth/register  
